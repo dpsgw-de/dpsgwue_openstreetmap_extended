@@ -1,0 +1,14 @@
+{
+	"name": "dpsgwue/dpsgwue-openstreetmap-extended",
+	"type": "typo3-cms-extension",
+	"description": "Extension for openstreetmap extended informations",
+	"license": ["GPL-2.0+"],
+	"require": {
+		"typo3/cms": ">=7.6.4 || >=8.0 || >=9.5"
+	},
+	"autoload": {
+		"psr-4": {
+			"DpsgWue\\DpsgWueOsmExtended\\": "Classes/"
+		}
+	}
+}

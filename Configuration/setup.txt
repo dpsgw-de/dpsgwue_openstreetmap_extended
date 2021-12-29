@@ -1,0 +1,6 @@
+bezirkPage = USER_INT
+bezirkPage {
+  userFunc = DpsgWue\DpsgWueOsmExtended\osm_extended->extractPageFromGeoJson
+  userFunc.jsonString = TEXT
+  userFunc.jsonString.field = data
+}
