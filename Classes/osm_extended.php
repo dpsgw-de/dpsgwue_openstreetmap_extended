@@ -1,6 +1,8 @@
 <?php
 namespace DpsgWue\DpsgWueOsmExtended;
 
+use TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer;
+
 /**
  * Hilfsfunktionen zur Darstellung der OSM-Karten (Bezirke/Stämme)
  *
@@ -11,7 +13,12 @@ class osm_extended {
 	/**
 	* Reference to the parent (calling) cObject set from TypoScript
 	*/
-	public $cObj;
+	private $cObj;
+
+	public function setContentObjectRenderer(ContentObjectRenderer $cObj): void
+	{
+		$this->cObj = $cObj;
+	}
 
 	function extractPageFromGeoJson($content = '', $conf = array()) {
 		//print_r($conf);
